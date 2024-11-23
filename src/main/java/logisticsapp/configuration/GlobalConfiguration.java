@@ -8,6 +8,8 @@ import org.springdoc.core.models.GroupedOpenApi;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.Arrays;
+
 @Configuration
 public class GlobalConfiguration {
 
@@ -19,9 +21,7 @@ public class GlobalConfiguration {
     @Bean
     OpenAPI openAPI() {
         return new OpenAPI()
-                .info(new Info().title("Task Management API").version("1.0"))
-                .addServersItem(new Server().url("http://localhost:8080"));
-
+                .info(new Info().title("Logistics API").version("1.0"));
     }
 
     @Bean
